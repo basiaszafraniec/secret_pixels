@@ -126,7 +126,7 @@ window.onload = () => {
             this.particlesArray = [];
             this.gap = 4;
             this.img1 = new Image();
-            this.img1.src = 'nothing.png';
+            this.img1.src = 'nothing0.png';
             this.img1.onload = () => {
                 this.img1_width = this.img1.width * 1.3;
                 this.img1_height = this.img1.height * 1.3;
@@ -206,7 +206,7 @@ window.onload = () => {
             ctx.fillRect(this.x, this.y, this.size, this.size);
         }
         initUpdate() {
-            if(vis){
+            if(this.vis){
                 if (this.x < 0 || this.x > CANVAS_WIDTH) this.vx = -this.vx;
                 if (this.y < 0 || this.y > CANVAS_HEIGHT) this.vy = -this.vy;
 
